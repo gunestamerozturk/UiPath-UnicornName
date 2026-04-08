@@ -1,0 +1,29 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "gunestamerweb@gmail.com",
+    "kind": "connection",
+    "type": "uipath-google-sheets",
+    "apiVersion": "integrationservice.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "connectorName": "Google Sheets",
+      "name": "gunestamerweb@gmail.com",
+      "description": null,
+      "authenticationType": "AuthenticateAfterDeployment",
+      "connectorVersion": "1.9.38",
+      "connectorKey": "uipath-google-sheets",
+      "pollingInterval": 5
+    },
+    "locks": [],
+    "key": "a21b27de-8a43-4250-97db-83fe5d55a631"
+  }
+}

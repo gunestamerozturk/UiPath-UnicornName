@@ -1,0 +1,29 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Microsoft OneDrive \u0026 SharePoint",
+    "kind": "connection",
+    "type": "uipath-microsoft-onedrive",
+    "apiVersion": "integrationservice.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "connectorName": "Microsoft OneDrive \u0026 SharePoint",
+      "name": "Microsoft OneDrive \u0026 SharePoint",
+      "description": null,
+      "authenticationType": "AuthenticateAfterDeployment",
+      "connectorVersion": "1.31.20",
+      "connectorKey": "uipath-microsoft-onedrive",
+      "pollingInterval": 5
+    },
+    "locks": [],
+    "key": "1b7681a3-9f10-4d85-85f6-6782ee1465e2"
+  }
+}

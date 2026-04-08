@@ -1,0 +1,334 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataRow5" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="118">
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>System</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.ConnectionClient.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>UiPath.GSuite.Sheets.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Excel.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Sharepoint</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Excel.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.Services.Contracts</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>ConnectionClient</AssemblyReference>
+      <AssemblyReference>List(Of )</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataRow1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataRow2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataRow3</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataRow4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataRow5</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1346,668" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="CreatedUnicornName" />
+      <Variable x:TypeArguments="ugdm:GDriveLocalItem" Name="dosya">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">DownloadFileConnections_1</x:String>
+            <x:String x:Key="SourcePropertyName">NewResult</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="510,68" sap2010:WorkflowViewState.IdRef="ManualTrigger_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ManualTrigger>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Find Unicorn Name" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="510,480" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsDisplayNameAuto="True" ScopeGuid="c686623c-7064-41a3-a705-2d25d267fe18" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Yap" sap:VirtualizedContainerService.HintSize="510,408" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uga:ForEachRowConnections x:TypeArguments="sd:DataRow5" ConnectionAccountName="{x:Null}" Length="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="UnicornName" BrowserItemId="https://docs.google.com/spreadsheets/d/1F7kfNqNLZ5kSjUP4YRja7zqAzujZmxFikDosbFSCFjY/edit?usp=drivesdk" ConnectionId="a21b27de-8a43-4250-97db-83fe5d55a631" CurrentItemVariableName="CurrentRow" DisplayName="For Each Row in Spreadsheet" EmptyRowAction="Skip" HasHeaders="True" sap:VirtualizedContainerService.HintSize="480,360" sap2010:WorkflowViewState.IdRef="ForEachRowConnections`1_1" ItemSelectionMode="Browse" Range="Sayfa1" ReadAs="Values" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+              <uga:ForEachRowConnections.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow5, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow5" Name="CurrentRow" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentRowIndex" />
+                  </ActivityAction.Argument2>
+                  <Sequence DisplayName="Yap" sap:VirtualizedContainerService.HintSize="480,288" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT txtName'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c686623c-7064-41a3-a705-2d25d267fe18" Text="[CurrentRow.Name]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="rpasamples.com/unicornname" DesignTimeRectangle="756, 257, 236, 28" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' id='txtName' /&gt;" Guid="2f9e24ac-2f40-49b5-b458-47d702f89305" InformativeScreenshot="4c95827b6aa77afcd91b6a208e778e88.jpg" ScopeSelectorArgument="&lt;html title='Find Unicorn Name' app='chrome.exe' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DisplayName="Select Item 'What month is your birt…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CurrentRow.BirthdayMonth]" ScopeIdentifier="c686623c-7064-41a3-a705-2d25d267fe18" Version="V5">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="13">
+                          <x:String></x:String>
+                          <x:String>January</x:String>
+                          <x:String>February</x:String>
+                          <x:String>March</x:String>
+                          <x:String>April</x:String>
+                          <x:String>May</x:String>
+                          <x:String>June</x:String>
+                          <x:String>July</x:String>
+                          <x:String>August</x:String>
+                          <x:String>September</x:String>
+                          <x:String>October</x:String>
+                          <x:String>November</x:String>
+                          <x:String>December</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="rpasamples.com/unicornname" DesignTimeRectangle="756, 305, 228, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SELECT' id='selMonth' type='' class='col-med' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5a503ae1-cbf2-401c-860a-0a2d35b2c8d1" InformativeScreenshot="53c7de8cb514cec02560e4e954b7e8f0.jpg" ScopeSelectorArgument="&lt;html title='Find Unicorn Name' app='chrome.exe' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="528, 305, 228, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='col-med' type='' aaname='What month is your birthday?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What month is your birthday?' /&gt;" Guid="9dcea032-dd95-4095-9833-2ddcd7447ad9" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NSelectItem>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Get Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c686623c-7064-41a3-a705-2d25d267fe18" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="rpasamples.com/unicornname" DesignTimeRectangle="523, 380, 130, 36" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' id='getNameButton' /&gt;" Guid="f0247685-c236-4b4b-ba37-fb2f8a0842bd" InformativeScreenshot="72627f4ef8616a35d5f426aae65de95c.jpg" ScopeSelectorArgument="&lt;html title='Find Unicorn Name' app='chrome.exe' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Twilight Twinkle-Sweet'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c686623c-7064-41a3-a705-2d25d267fe18" TextString="[CreatedUnicornName]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="rpasamples.com/unicornname" DesignTimeRectangle="1023, 255, 184, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SPAN' id='lblUnicornName' /&gt;" Guid="467191cc-54e1-4043-a71e-063458f668fe" InformativeScreenshot="e60fcb84424b023f8a96adb6c993341f.jpg" ScopeSelectorArgument="&lt;html title='Find Unicorn Name' app='chrome.exe' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                    <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="UnicornName" BrowserItemId="https://docs.google.com/spreadsheets/d/1F7kfNqNLZ5kSjUP4YRja7zqAzujZmxFikDosbFSCFjY/edit?usp=drivesdk" Cell="[CurrentRow.UnicornName_Address]" ConnectionId="a21b27de-8a43-4250-97db-83fe5d55a631" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="Browse" RangeLocation="Sayfa1" UseConnectionService="True" WhatToWrite="[CreatedUnicornName]">
+                      <uga:WriteCellConnections.FileIdBackup>
+                        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
+                          <usau:BackupSlot.BackupValues>
+                            <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                          </usau:BackupSlot.BackupValues>
+                        </usau:BackupSlot>
+                      </uga:WriteCellConnections.FileIdBackup>
+                      <uga:WriteCellConnections.Item>
+                        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1F7kfNqNLZ5kSjUP4YRja7zqAzujZmxFikDosbFSCFjY/edit?usp=drivesdk" ConnectionKey="a21b27de-8a43-4250-97db-83fe5d55a631" FriendlyName="UnicornName" FullPathHint="My Drive/UnicornName" InputMode="Browse">
+                          <ugam:DriveItemArgument.DriveId>
+                            <InArgument x:TypeArguments="x:String" />
+                          </ugam:DriveItemArgument.DriveId>
+                          <ugam:DriveItemArgument.ParentIdFullPathHint>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ugam:DriveItemArgument.ParentIdFullPathHint>
+                        </ugam:DriveItemArgument>
+                      </uga:WriteCellConnections.Item>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uga:WriteCellConnections>
+                  </Sequence>
+                </ActivityAction>
+              </uga:ForEachRowConnections.Body>
+              <uga:ForEachRowConnections.ColumnNames>
+                <x:Array Type="x:String">
+                  <x:String>Name</x:String>
+                  <x:String>BirthdayMonth</x:String>
+                  <x:String>UnicornName</x:String>
+                </x:Array>
+              </uga:ForEachRowConnections.ColumnNames>
+              <uga:ForEachRowConnections.FileIdBackup>
+                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:ForEachRowConnections.FileIdBackup>
+              <uga:ForEachRowConnections.Item>
+                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1F7kfNqNLZ5kSjUP4YRja7zqAzujZmxFikDosbFSCFjY/edit?usp=drivesdk" ConnectionKey="a21b27de-8a43-4250-97db-83fe5d55a631" FriendlyName="UnicornName" FullPathHint="My Drive/UnicornName" InputMode="Browse">
+                  <ugam:DriveItemArgument.DriveId>
+                    <InArgument x:TypeArguments="x:String" />
+                  </ugam:DriveItemArgument.DriveId>
+                  <ugam:DriveItemArgument.ParentIdFullPathHint>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ugam:DriveItemArgument.ParentIdFullPathHint>
+                </ugam:DriveItemArgument>
+              </uga:ForEachRowConnections.Item>
+              <uga:ForEachRowConnections.RangeMetadata>
+                <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
+              </uga:ForEachRowConnections.RangeMetadata>
+            </uga:ForEachRowConnections>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" InformativeScreenshot="0feea1cea812445e4f65eb89ce1d1028.jpg" Selector="&lt;html title='Find Unicorn Name' app='chrome.exe' /&gt;" Url="https://www.rpasamples.com/unicornname" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uga:DownloadFileConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationPath="{x:Null}" File="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/spreadsheets/d/1F7kfNqNLZ5kSjUP4YRja7zqAzujZmxFikDosbFSCFjY/edit?usp=drivesdk" ConflictResolution="Fail" ConnectionId="a0b0f1c0-8465-4492-86a0-9a55883c6a9c" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileFriendlyName="UnicornName" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="510,48" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_1" NewResult="[dosya]" UseConnectionService="True">
+      <uga:DownloadFileConnections.FileIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:DownloadFileConnections.FileIdBackup>
+      <uga:DownloadFileConnections.Item>
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1F7kfNqNLZ5kSjUP4YRja7zqAzujZmxFikDosbFSCFjY/edit?usp=drivesdk" ConnectionKey="a0b0f1c0-8465-4492-86a0-9a55883c6a9c" FriendlyName="UnicornName" FullPathHint="My Drive/UnicornName" InputMode="Browse">
+          <ugam:DriveItemArgument.DriveId>
+            <InArgument x:TypeArguments="x:String" />
+          </ugam:DriveItemArgument.DriveId>
+          <ugam:DriveItemArgument.ParentIdFullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.ParentIdFullPathHint>
+        </ugam:DriveItemArgument>
+      </uga:DownloadFileConnections.Item>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uga:DownloadFileConnections>
+    <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[Enumerable.Repeat(dosya, 1).ToList()]" AuthScopesInvalid="False" Body="&lt;p&gt;Bu e-postayı alıyorsanız Studio Web'deki ilk otomasyonum başarılı oldu demektir! İşte istediğiniz Unicorn adlarının ekli olduğu çalışma kitabı.&lt;/p&gt;" ConnectionId="a337c55d-ebde-4f72-94ec-dbd27dd012c2" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="510,48" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="Unicorn Name Exercise" To="[New String(){&quot;gunestamerozturk@gmail.com&quot;}]" UseConnectionService="True">
+      <uga:SendEmailConnections.AttachmentsBackup>
+        <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:SendEmailConnections.AttachmentsBackup>
+      <uga:SendEmailConnections.InputTypeBackup>
+        <usau:BackupSlot x:TypeArguments="ugage:BodyInputType" StoredValue="HTML">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugage:BodyInputType, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:SendEmailConnections.InputTypeBackup>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uga:SendEmailConnections>
+  </Sequence>
+</Activity>
